@@ -1,11 +1,23 @@
 package com.sonar;
 
-/**
- * Hello world!
- *
- */
 public class App {
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
+	public void coveredByUnitTest() {
+		System.out.println("coveredByUnitTest1");
+		System.out.println("coveredByUnitTest2");
 	}
+
+	public void coveredByIntegrationTest() {
+		System.out.println("coveredByIntegrationTest1");
+		System.out.println("coveredByIntegrationTest2");
+		System.out.println("coveredByIntegrationTest3");
+	}
+
+	public void notCovered() {
+		System.out.println("notCovered");
+	}
+	
+	public static void main(){
+		System.out.println("I am here");
+	}
+
 }
